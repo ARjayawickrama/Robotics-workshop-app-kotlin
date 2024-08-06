@@ -19,11 +19,12 @@
         android:background="@drawable/round_btn"
         android:backgroundTint="#86D7FD"
         android:fontFamily="sans-serif-black"
-        android:text="Diagram"
+        android:text="Code"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Code" />
 
     <Button
         android:id="@+id/button6"
@@ -34,7 +35,7 @@
         android:background="@drawable/round_btn"
         android:backgroundTint="#C3A9EC"
         android:fontFamily="sans-serif-black"
-        android:text="Code"
+        android:text=" Diagram"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
