@@ -33,5 +33,12 @@ class page4 : AppCompatActivity() {
             val intent3 = Intent(this, DiagramActivity::class.java)
             startActivity(intent3)
         }
+
+        val button7 = findViewById<Button>(R.id.button7)
+        button7.setOnClickListener {
+            val intent4 = Intent(this, UploadActivity::class.java)
+            startActivity(intent4)
+        }
+
     }
 }
