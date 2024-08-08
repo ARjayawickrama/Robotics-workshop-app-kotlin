@@ -18,15 +18,20 @@ class page4 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val button = findViewById<Button>(R.id.button4)
-        button.setOnClickListener {
-            val intent1 = Intent(this,Lessons::class.java)
+        val button4 = findViewById<Button>(R.id.button4)
+        button4.setOnClickListener {
+            val intent1 = Intent(this, Lessons::class.java)
             startActivity(intent1)
         }
-        val button1 = findViewById<Button>(R.id.button5)
-        button1.setOnClickListener {
-            val intent1 = Intent(this,Code::class.java)
-            startActivity(intent1)
+        val button5 = findViewById<Button>(R.id.button5)
+        button5.setOnClickListener {
+            val intent2 = Intent(this, Code::class.java)
+            startActivity(intent2)
+        }
+        val button6 = findViewById<Button>(R.id.button6)
+        button6.setOnClickListener {
+            val intent3 = Intent(this, DiagramActivity::class.java)
+            startActivity(intent3)
         }
     }
 }

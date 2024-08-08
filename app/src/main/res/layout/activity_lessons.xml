@@ -1,134 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#008BB8"
-    tools:context=".Lessons">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Lessons">
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="#0C2130"
-        android:text="Back"
-        android:textColor="#F8F4F4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            tools:context=".Lessons">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+            <!-- Existing Views -->
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#0C2130"
+                android:text="Back"
+                android:textColor="#F8F4F4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="413dp"
+                android:layout_height="258dp"
+                android:background="@drawable/bg_view"
+                android:backgroundTint="#009688"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout5"
-        android:layout_width="334dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView">
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="384dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#009688"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="133dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/arduino" />
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:src="@drawable/robot" />
 
-    </FrameLayout>
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rovers Mars"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
-    <FrameLayout
-        android:id="@+id/frameLayout6"
-        android:layout_width="334dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="384dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#009688"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout1">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="133dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/arduino" />
-    </FrameLayout>
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:src="@drawable/robot" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout7"
-        android:layout_width="334dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Robot Car"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="133dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/arduino" />
-    </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="384dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#009688"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
 
-    <FrameLayout
-        android:id="@+id/frameLayout8"
-        android:layout_width="334dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout7">
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:src="@drawable/robot" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="133dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/arduino" />
-    </FrameLayout>
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Robot A/M"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="334dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout8">
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="384dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#009688"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="133dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/arduino" />
-    </FrameLayout>
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:src="@drawable/robot" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Robot Car"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="384dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#009688"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.592"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:src="@drawable/robot" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Robot Car"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="384dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#009688"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.592"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:src="@drawable/robot" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Robot Car"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="195dp"
+                android:layout_height="181dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/robot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Hi"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
