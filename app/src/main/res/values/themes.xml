@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.RobotApp" parent="Base.Theme.RobotApp" />
+    <style name="Theme.RobotApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.RobotApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.RobotApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
