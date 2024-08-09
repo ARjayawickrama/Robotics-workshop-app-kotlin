@@ -28,9 +28,33 @@ class Code : AppCompatActivity() {
             finish() // This will close the current activity and take the user back to the previous activity
         }
 
-        // Adding functionality to navigate to Codes2 activity when Rovers Mars is clicked
+        // Adding functionality to navigate to Codes1 activity when each FrameLayout is clicked
         val roversMarsFrame = findViewById<FrameLayout>(R.id.frameLayout1)
         roversMarsFrame.setOnClickListener {
+            val intent = Intent(this, Codes1::class.java)
+            startActivity(intent)
+        }
+
+        val roversCare = findViewById<FrameLayout>(R.id.frameLayout2)
+        roversCare.setOnClickListener {
+            val intent = Intent(this, Codes1::class.java)
+            startActivity(intent)
+        }
+
+        val robot = findViewById<FrameLayout>(R.id.frameLayout4)
+        robot.setOnClickListener {
+            val intent = Intent(this, Codes1::class.java)
+            startActivity(intent)
+        }
+
+        val car = findViewById<FrameLayout>(R.id.frameLayout5)
+        car.setOnClickListener {
+            val intent = Intent(this, Codes1::class.java)
+            startActivity(intent)
+        }
+
+        val rover = findViewById<FrameLayout>(R.id.frameLayout6)
+        rover.setOnClickListener {
             val intent = Intent(this, Codes1::class.java)
             startActivity(intent)
         }

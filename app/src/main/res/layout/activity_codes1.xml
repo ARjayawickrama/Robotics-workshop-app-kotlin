@@ -5,54 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:backgroundTint="#000000"
     tools:context=".Codes1">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="413dp"
-        android:layout_height="128dp"
-        android:background="@drawable/bg_view2"
-        android:backgroundTint="#009688"
-
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="410dp"
+        android:layout_height="576dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.838"
+        app:srcCompat="@drawable/_23screenshot_2024_08_09_101823" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="373dp"
-        android:layout_height="448dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <SearchView
+        android:id="@+id/searchView2"
+        android:layout_width="303dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#F3F1F1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302"
-        app:srcCompat="@drawable/screenshot_2024_08_09_005056" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="401dp"
-        android:layout_height="297dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:srcCompat="@drawable/screenshot_2024_08_09_005056" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="Code"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:text="Ardunio Code"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

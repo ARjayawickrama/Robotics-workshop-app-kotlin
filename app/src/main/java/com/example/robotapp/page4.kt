@@ -3,6 +3,7 @@ package com.example.robotapp
 import android.content.Intent
 import android.widget.Button
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -40,5 +41,10 @@ class page4 : AppCompatActivity() {
             startActivity(intent4)
         }
 
+        val imageView20 = findViewById<ImageView>(R.id.imageView20)
+        imageView20.setOnClickListener {
+            val intent5 = Intent(this, ProfileActivity::class.java)
+            startActivity(intent5)
+        }
     }
 }
