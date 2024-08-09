@@ -119,7 +119,7 @@ tools:context=".DiagramActivity">
                 android:layout_width="117dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="start|center_vertical"
-                android:src="@drawable/robot" />
+                android:src="@drawable/pngwing_com__13_" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -149,7 +149,7 @@ tools:context=".DiagramActivity">
                 android:layout_width="117dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="start|center_vertical"
-                android:src="@drawable/robot" />
+                android:src="@drawable/pngwing_com__14_" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -179,7 +179,7 @@ tools:context=".DiagramActivity">
                 android:layout_width="117dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="start|center_vertical"
-                android:src="@drawable/robot" />
+                android:src="@drawable/pngwing_com__11_" />
 
             <TextView
                 android:id="@+id/textView15"

@@ -1,5 +1,6 @@
 package com.example.robotapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -21,5 +22,13 @@ class UploadActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             finish() // This will close the current activity and take the user back to the previous activity
         }
+
+
+        val Uploadbt = findViewById<Button>(R.id.uploadButton)
+        Uploadbt.setOnClickListener {
+            val intent = Intent(this, UplodingSusesActivity2::class.java)
+            startActivity(intent)
+        }
+
     }
 }
