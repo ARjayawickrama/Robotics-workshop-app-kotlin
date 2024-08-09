@@ -11,25 +11,33 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="383dp"
-        android:layout_height="145dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="#2F3D8C"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout1"
+        android:layout_width="429dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="27dp"
+
+        android:background="@drawable/bg_view2"
+        android:backgroundTint="#2F41A8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView2">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/searchView2"
+            android:layout_width="303dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#F1EEEE"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="76dp" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:layout_width="158dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="110dp"
             android:text="Welcome To Diagram"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
@@ -37,24 +45,12 @@
 
         <ImageView
             android:id="@+id/imageView17"
-            android:layout_width="202dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="0dp"
-            app:srcCompat="@drawable/pngwing_com__11_" />
+            android:layout_width="180dp"
+            android:layout_height="139dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/pngwing_com__12_" />
     </FrameLayout>
-
-    <SearchView
-        android:id="@+id/searchView2"
-        android:layout_width="303dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="52dp"
-        android:background="@drawable/round_btn"
-        android:backgroundTint="#F1EEEE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView21"
