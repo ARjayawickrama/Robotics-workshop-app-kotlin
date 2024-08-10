@@ -30,5 +30,11 @@ class UploadActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val uploadDetailsButton1 = findViewById<Button>(R.id.uploadDetailsButton)
+        uploadDetailsButton1.setOnClickListener {
+            val intent = Intent(this, uploadDetailsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
