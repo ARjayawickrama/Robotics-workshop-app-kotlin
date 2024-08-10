@@ -20,14 +20,15 @@
             android:layout_width="0dp"
             android:layout_height="195dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="13dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/bg_view2"
             android:backgroundTint="#2F41A8"
             app:layout_constraintBottom_toTopOf="@+id/imageView9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/textView6"
@@ -35,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="200dp"
                 android:layout_marginTop="110dp"
+
                 android:text="Welcome To Code"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
@@ -42,20 +44,24 @@
 
             <SearchView
                 android:id="@+id/searchView2"
-                android:layout_width="303dp"
-                android:layout_height="41dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/round_btn"
                 android:backgroundTint="#F1EEEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
 
             <ImageView
                 android:id="@+id/imageView17"
                 android:layout_width="128dp"
                 android:layout_height="117dp"
                 android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
                 app:srcCompat="@drawable/pngwing_com__11_" />
         </FrameLayout>
 
