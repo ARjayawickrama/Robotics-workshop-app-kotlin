@@ -30,11 +30,11 @@ tools:context=".DiagramActivity">
 
             <ImageView
                 android:id="@+id/imageView17"
-                android:layout_width="106dp"
+                android:layout_width="130dp"
                 android:layout_height="197dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="90dp"
-                app:srcCompat="@drawable/pngwing_com__11_" />
+                app:srcCompat="@drawable/pngwing_com__12_" />
 
             <TextView
                 android:id="@+id/textView6"
