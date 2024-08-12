@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".DiagramActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiagramActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -13,6 +13,7 @@ tools:context=".DiagramActivity">
         android:layout_height="wrap_content"
         android:background="#EFEEEE"
         android:backgroundTint="#000000">
+
 
         <FrameLayout
             android:id="@+id/frameLayout"
@@ -48,6 +49,7 @@ tools:context=".DiagramActivity">
                 android:textStyle="bold" />
         </FrameLayout>
 
+
         <SearchView
             android:id="@+id/searchView2"
             android:layout_width="303dp"
@@ -61,6 +63,7 @@ tools:context=".DiagramActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Back Button -->
         <Button
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
@@ -100,8 +103,8 @@ tools:context=".DiagramActivity">
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
         </FrameLayout>
+
 
         <FrameLayout
             android:id="@+id/frameLayout2"
@@ -133,6 +136,7 @@ tools:context=".DiagramActivity">
                 android:textStyle="bold" />
         </FrameLayout>
 
+
         <FrameLayout
             android:id="@+id/frameLayout3"
             android:layout_width="320dp"
@@ -162,6 +166,7 @@ tools:context=".DiagramActivity">
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </FrameLayout>
+
 
         <FrameLayout
             android:id="@+id/frameLayout4"
@@ -193,6 +198,7 @@ tools:context=".DiagramActivity">
                 android:textStyle="bold" />
         </FrameLayout>
 
+
         <FrameLayout
             android:id="@+id/frameLayout5"
             android:layout_width="320dp"
@@ -222,6 +228,7 @@ tools:context=".DiagramActivity">
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </FrameLayout>
+
 
         <FrameLayout
             android:id="@+id/frameLayout6"

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.widget.Button
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -46,5 +47,10 @@ class page4 : AppCompatActivity() {
             val intent5 = Intent(this, ProfileActivity::class.java)
             startActivity(intent5)
         }
+        val username = intent.getStringExtra("USERNAME")
+
+        // Display the username
+        val usernameTextView = findViewById<TextView>(R.id.username_text_view)
+        usernameTextView.text = "Entered Username: $username"
     }
 }

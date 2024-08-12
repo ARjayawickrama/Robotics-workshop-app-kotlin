@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
         }
         val button = findViewById<Button>(R.id.googleLoginButton)
         button.setOnClickListener {
-            val intent = Intent(this, page4::class.java)
+            val intent = Intent(this, UserNameActivity2::class.java)
             startActivity(intent)
         }
 

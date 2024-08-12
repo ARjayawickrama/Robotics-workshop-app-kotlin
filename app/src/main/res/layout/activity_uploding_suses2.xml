@@ -8,50 +8,43 @@
     android:background="#000000"
     tools:context=".UplodingSusesActivity2">
 
-    <ImageView
-        android:id="@+id/successIcon"
-        android:layout_width="222dp"
-        android:layout_height="252dp"
-        android:layout_marginStart="97dp"
-        android:layout_marginEnd="92dp"
-        android:background="#000000"
-        android:src="@drawable/pngwing_com__15_"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent">
 
-    </ImageView>
+        <ImageView
+            android:id="@+id/successIcon"
+            android:layout_width="222dp"
+            android:layout_height="252dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/pngwing_com__15_"
+            android:background="#000000" />
 
-    <TextView
-        android:id="@+id/messageTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:text="Upload Successful!"
-        android:textColor="#4CAF50"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/successIcon"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Upload Successful!"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/continueButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:backgroundTint="#4CAF50"
-        android:text="Continue"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messageTextView"
-        tools:ignore="MissingConstraints" /> <!-- Success color -->
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
